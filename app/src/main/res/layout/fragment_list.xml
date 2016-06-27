@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.blacknblack.jonfinalproject.ListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="387dp"
+            android:id="@+id/listView"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_gravity="center_horizontal|top"
+            android:id="@+id/relativeLayout"
+            android:background="#cccccc">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="By City"
+                    android:id="@+id/bycityBTN"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f7b2b2"
+                    android:layout_alignBottom="@+id/bylocationBTN"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="By location"
+                    android:id="@+id/bylocationBTN"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/bycityBTN"
+                    android:layout_toEndOf="@+id/bycityBTN"
+                    android:background="#eecaca"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextlist"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint=" Search by City"
+                android:layout_toLeftOf="@+id/buttonlist"
+                android:layout_toStartOf="@+id/buttonlist" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="go!"
+                android:id="@+id/buttonlist"
+                android:layout_alignTop="@+id/editTextlist"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>
